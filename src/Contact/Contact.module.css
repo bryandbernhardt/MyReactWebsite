@@ -1,0 +1,33 @@
+.contact {
+  background-color: var(--background-secondary);
+  padding: 85px;
+  margin-top: 8.125rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.email {
+  color: var(--main-primary);
+  font-weight: 500;
+  font-size: 2.25rem;
+  word-break: break-all;
+}
+
+.contact > a > *,
+.contact > * > a {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.socialMedias {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socialMedia {
+  width: 50px;
+}

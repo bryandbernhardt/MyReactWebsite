@@ -1,0 +1,62 @@
+.apresentation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img {
+  margin-left: 3.75rem;
+}
+
+.h2 {
+  transform: translate(0.188rem, 0.4rem);
+}
+
+.buttons {
+  display: flex;
+  margin-top: 1.375rem;
+  gap: 1rem;
+}
+
+.btnPortfolio {
+  background-color: var(--main-secondary);
+}
+
+.btnContato {
+  background-color: var(--main-primary);
+}
+
+@media (min-width: 941px) {
+  .content {
+    max-width: 55%;
+  }
+  .apresentation {
+    height: calc(100vh - 50px);
+  }
+}
+
+@media (max-width: 940px) {
+  .apresentation {
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
