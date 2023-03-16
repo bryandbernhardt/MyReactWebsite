@@ -1,19 +1,18 @@
 .apresentation {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+}
+
+.content {
+  max-width: 100%;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.img {
-  margin-left: 3.75rem;
 }
 
 .h2 {
@@ -43,6 +42,20 @@
   }
 }
 
+@media (max-width: 325) {
+  .img {
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 940px) {
   .apresentation {
     flex-direction: column-reverse;
@@ -58,5 +71,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 325px) {
+  .img {
+    max-width: 100%;
   }
 }

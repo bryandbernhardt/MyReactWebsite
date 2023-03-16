@@ -11,7 +11,7 @@
 }
 
 svg {
-  max-width: 8.125rem;
+  max-width: clamp(1.5625rem, 0.1531rem + 7.047vw, 8.125rem);
 }
 
 .logos {

@@ -39,32 +39,32 @@ p {
 }
 
 h1 {
-  font-size: 4.375rem;
+  font-size: clamp(1.5rem, 0.8826rem + 3.0872vw, 4.375rem);
   font-weight: 800;
   line-height: 1.1;
   color: var(--main-primary);
 }
 
 h2 {
-  font-size: 3.75rem;
+  font-size: clamp(1.25rem, 0.7131rem + 2.6846vw, 3.75rem);
   font-weight: 500;
   color: var(--main-secondary);
   text-align: center;
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: clamp(1.125rem, 0.8834rem + 1.2081vw, 2.25rem);
   font-weight: 600;
   color: #a7a7b0;
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: clamp(0.875rem, 0.7408rem + 0.6711vw, 1.5rem);
   font-weight: 500;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: clamp(0.5625rem, 0.4417rem + 0.604vw, 1.125rem);
   font-weight: 400;
   color: var(--main-secondary);
 }
@@ -73,9 +73,9 @@ button {
   border-radius: 10px;
   border: 0;
   padding: 0;
-  min-width: 189px;
-  min-height: 49px;
+  padding: 16px;
   color: var(--background-primary);
+  font-size: clamp(0.5625rem, 0.4417rem + 0.604vw, 1.125rem);
 }
 
 button:hover {

@@ -1,17 +1,17 @@
 .contact {
   background-color: var(--background-secondary);
-  padding: 85px;
+  padding: 2rem;
   margin-top: 8.125rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
+  align-content: center;
 }
 
 .email {
   color: var(--main-primary);
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: clamp(0.5625rem, 0.2001rem + 1.8121vw, 2.25rem);
   word-break: break-all;
 }
 
