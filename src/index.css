@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a7a7b0;
+  border-radius: 5px;
+}
+
 :root {
   --main-primary: #34a1cd;
   --main-secondary: #130f49;
@@ -22,7 +35,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   justify-content: center;
-  padding: 50px 50px 0 50px;
 }
 
 code {
@@ -56,6 +68,12 @@ h3 {
   font-size: clamp(1.125rem, 0.8834rem + 1.2081vw, 2.25rem);
   font-weight: 600;
   color: #a7a7b0;
+}
+
+sub {
+  font-size: clamp(0.5rem, 0.0294rem + 2.3529vw, 1.5rem);
+  font-weight: 500;
+  color: var(--main-secondary);
 }
 
 .subtitle {

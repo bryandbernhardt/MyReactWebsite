@@ -1,12 +1,28 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-secondary);
+  opacity: 0.85;
+}
+
 .apresentation {
+  height: 100vh;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
+  position: relative;
 }
 
 .content {
   max-width: 100%;
+  padding: 18px;
+  background-color: #f5f6ff;
+  border-radius: 15px;
 }
 
 .title {
@@ -16,7 +32,7 @@
 }
 
 .h2 {
-  transform: translate(0.188rem, 0.4rem);
+  transform: translateY(0.4rem);
 }
 
 .buttons {
@@ -33,19 +49,17 @@
   background-color: var(--main-primary);
 }
 
-@media (min-width: 941px) {
-  .content {
-    max-width: 55%;
-  }
-  .apresentation {
-    height: calc(100vh - 50px);
-  }
+.img {
+  padding: 18px;
 }
 
-@media (max-width: 325) {
+@media (orientation: landscape) {
   .img {
-    margin-bottom: 2rem;
-    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    max-width: 55%;
   }
 
   .buttons {
@@ -56,14 +70,13 @@
   }
 }
 
-@media (max-width: 940px) {
+@media (orientation: portrait) {
   .apresentation {
     flex-direction: column-reverse;
   }
 
   .img {
-    margin-bottom: 2rem;
-    margin-left: 0;
+    max-width: 100%;
   }
 
   .buttons {
@@ -71,11 +84,5 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 325px) {
-  .img {
-    max-width: 100%;
   }
 }
