@@ -19,8 +19,8 @@ const Apresentation: React.FC<Props> = (props) => {
             </h1>
           </div>
           <p>
-            Desenvolvedor e Analista de Sistemas Web fissurado em tecnologia e
-            seus meios de resolver problemas do mundo real.
+            Desenvolvedor e Analista de Sistemas fissurado em tecnologia e seus
+            meios de resolver problemas do mundo real.
           </p>
           <div className={styles.buttons}>
             <a
