@@ -35,7 +35,7 @@ const Contact: React.FC<Props> = (props) => {
         </a>
         <a
           title="GitHub"
-          href="http://github.com/BryanDietrichBernhardt"
+          href="http://github.com/bryandbernhardt"
           target="_blank"
           rel="noreferrer"
         >

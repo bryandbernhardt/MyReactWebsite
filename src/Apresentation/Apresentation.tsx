@@ -24,7 +24,7 @@ const Apresentation: React.FC<Props> = (props) => {
           </p>
           <div className={styles.buttons}>
             <a
-              href="https://github.com/BryanDietrichBernhardt"
+              href="https://github.com/bryandbernhardt"
               target="_blank"
               rel="noreferrer"
             >
